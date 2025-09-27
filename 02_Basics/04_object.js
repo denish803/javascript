@@ -33,4 +33,6 @@ console.log(Object.entries(userDetials)); // it will return array of key value p
 
 console.log(userDetials.hasOwnProperty("dsf"));
 
+const {userPesionality: od} = userDetials; // it will destructure object
+console.log(od);
 
