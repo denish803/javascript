@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #212122;
+            margin: 0;
+            padding: 0;
+        }
+
+        .digital-clock {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(209, 201, 201, 0.1);
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        h3 {
+            color: #ccc;
+            margin-top: -10px;
+        }
+
+        #time {
+            font-size: 48px;
+            margin-top: 20px;
+        }
+
+        h5 {
+            font-weight: normal;
+            color: #00ff00;
+            text-shadow: 0 0 10px #709a70;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="digital-clock">
+        <h1>Digital Clock</h1>
+        <h3>Your Local Time</h3>
+        <h5 id="time"></h5>
+    </div>
+</body>
+
+<script src="./digitalClock.js"></script>
+
+</html>
