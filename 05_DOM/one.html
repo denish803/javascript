@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    <div id="week">
+        <div class="parent">
+            <ul>
+                <li>Monday</li>
+                <li>Tuseday</li>
+                <li>Wednesday</li>
+                <li>Thuseday</li>
+                <li>Firday</li>
+            </ul>
+        </div>
+    </div>
+</body>
+ 
+<script>
+
+    // selecting the parent element
+    const parent = document.querySelector('.parent ul');
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[0].children);
+
+
+    // looping through the li elements
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerText);
+    }
+
+    // adding a new li element
+    document.querySelector('.parent ul').innerHTML += "<li>Sturday</li>";
+
+    // first and last element child
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    // adding a class to the first li element
+    document.querySelector('.parent ul li').setAttribute("class", "days");
+
+    const day = document.querySelector('.days'); // it will give the first li element
+    console.log(day.innerHTML); // it will give the inner html of the li element
+
+    console.log(day.parentElement); // it will give the parent element of the li element
+    console.log(day.nextElementSibling) // it will give the next li element
+
+    console.log(parent.childNodes); // it will also count the text node (like space, enter etc)
+
+
+</script>
+
+</html>
