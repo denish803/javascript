@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff0aa;" >
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+
+<script>
+
+    // add language function
+    function addLanguage(languageName) {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(languageName));
+        document.querySelector('.language')
+        .appendChild(li);
+    }
+
+    addLanguage("java");
+    addLanguage("py");
+
+
+    // Edit language function
+    function editLanguage(newName, index) {
+        const value = document.querySelector(`.language li:nth-child(${index})`);
+        const li = document.createElement("li");
+        li.textContent = newName
+        value.replaceWith(li);    
+    }
+
+    editLanguage("JavaScript", 1);
+    editLanguage("Python", 3);
+    editLanguage("Java", 2);
+
+    // remove language function
+    function removeLanguage(index) {
+        document.querySelector(`.language li:nth-child(${index})`).remove();
+    }
+
+    removeLanguage(3);
+
+
+</script>
+
+</html>
