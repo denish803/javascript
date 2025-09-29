@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <style>
+        .image {
+            width: 50px;
+            height: 50px;
+            background: #000;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .image:hover {
+            width: 60px;
+            height: 60px;
+            transition: 1s;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <div class="image" id = "one"></div>
+        <div class="image" id = "two"></div>
+        <div class="image" id = "three"></div>
+        <div class="image" id = "four"></div>
+        <div class="image" id = "five"></div>
+        <div class="image" id = "six"></div>
+    </div>
+</body>
+
+<script>
+
+/*
+// true is get a bottom to Top go
+    document.getElementById("main").addEventListener("click", (e) => {
+        console.log("CLick in side of Main Div");
+    }, false);
+
+    document.getElementById("two").addEventListener("click", (e) => {
+        e.stopPropagation();
+        console.log("Click a two number Div");
+    }, false)
+
+    // true is get a Data top to bottom it is calles Event Propogration
+    document.getElementById("main").addEventListener("click", (e) => {
+        // stop the event if repeted in other EventListerner
+        e.stopPropagation();
+        console.log("click inside of Main Div");
+    }, true)
+
+    document.getElementById("two").addEventListener("click", (e)=>{
+        alert("Click a two number DIv")
+    }, true)
+*/
+
+
+
+</script>
+
+</html>
